@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background:rgb(156, 156, 156);
+    margin: 3rem auto;
+    width:360px;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    margin:1.4rem;
+}
+body{
+    display: flex;
+    margin: 0;
+    min-height: 60vh;
+    font-family: "Open Sans";
+}
+form{
+    display: block;
+    padding: 20px;
+    background-color: rgb(70, 30, 30);
+    color: white;
+    border-radius: 12px;
+}
+form label, form input{
+    display: block;
+    width: 100%;
+    margin: 0.86rem 0;
+}
+
+form input,form button{
+    background-color: #ccc;
+    height:30px;
+    border-radius: 12px;
+    border: none;   
+}
+form button{
+    display: block;
+    cursor: pointer;
+    border: none;
+    font-size: 0.7rem;
+    padding: .22rem 1rem;
+    width: 50%;
+    margin: 1.8rem auto;
+    background: grey;
+    font-weight: bold;
+}
+form button:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+form button:focus,form input:focus{
+    outline: none;
+    border: none;
+    color:brown;
+    padding-left: 0.3rem;
+}
+form input::placeholder{
+    font-size: 0.7rem;
+    color: rgb(70, 30, 30);
+    padding-left: 1rem;
+}
+form label{
+    font-size: 1rem;
+}
+form .agree{
+    width: 50%;
+    display: inline;
+}
+form .checkbox{
+    width:25px;
+    padding-top: 20rem;
+    height:20px;
+    display: inline;
+    margin-left: 2rem;
+
+}
+
+form .error {
+  color:rgb(247, 82, 82);
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+} 

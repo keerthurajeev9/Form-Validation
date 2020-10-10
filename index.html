@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form name="register"  action="/success.html" method="POST" data-netlify="true">
+            <label for="fname">
+                First Name
+            </label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+            <label for="lname">
+                Last Name
+            </label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+            <label for="email">
+                Email
+            </label>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+            <label for="password">
+                Password
+            </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <label for="password2">
+                Confirm password
+            </label>
+            <input type="password" name="password2" id="password2" placeholder="Enter your password again">
+            <label class="agree" for="agree">
+               Agree to the terms and conditions.
+            </label>
+            <input class="checkbox" type="checkbox" name="agree" id="agree" value="selected">
+            <!-- Checkbox-->
+            <div class="mr-2">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            <button type="submit"> Register Now</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="validation.js"></script>
+
+</body>
+</html>
